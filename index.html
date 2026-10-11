@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JobConnect</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+    <header class="navbar">
+        <a href="#home" class="logo">
+            <i class="fa-solid fa-briefcase"></i>
+            <div>JobConnect
+                <small>Your Career, Our Priority</small>
+            </div>
+        </a>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#jobs">Jobs</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <button id="themeBtn" class="theme-btn">
+    <i class="fa-solid fa-moon"></i>
+  </button>
+    </header>
+
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <span class="tag">🚀 Find Your Next Opportunity</span>
+
+            <h1>Find Your <span>Dream</span> Job</h1>
+
+            <p>
+                Search for the right job and start your career journey today. Your next big opportunity is just a click away!
+            </p>
+
+            <form id="searchForm" class="search-box">
+                <input id="keyword" type="text" placeholder="Job title or keyword">
+
+                <input id="location" type="text" placeholder="Location">
+
+                <button type="submit" class="primary-btn">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        Search Jobs
+      </button>
+            </form>
+        </div>
+
+        <div class="hero-art">
+            <img src="madhavi.jpeg" alt="madhavi">
+            <div class="float-card learn">🎓 Learn</div>
+            <div class="float-card grow">📈 Grow</div>
+            <div class="float-card succeed">⭐ Succeed</div>
+        </div>
+    </section>
+
+    <section class="jobs-section" id="jobs">
+        <div class="section-heading">
+            <div>
+                <h2>Latest Job Opportunities</h2>
+                <p>Explore the latest job openings and find the perfect role for you.</p>
+            </div>
+
+            <div class="filters">
+                <button class="filter-btn selected" data-filter="all">
+        All Jobs
+      </button>
+                <button class="filter-btn" data-filter="it">
+        IT Jobs
+      </button>
+                <button class="filter-btn" data-filter="non-it">
+        Non-IT Jobs
+      </button>
+            </div>
+        </div>
+
+        <div class="job-grid">
+
+            <article class="job-card" data-type="it" data-title="frontend developer" data-location="bangalore">
+                <div class="job-top">
+                    <div class="job-icon blue"><i class="fa-solid fa-code"></i></div>
+                    <div class="job-info">
+                        <h3>Frontend Developer</h3>
+                        <p>Tech Solutions</p>
+                    </div>
+                    <span class="badge it-badge">IT</span>
+                </div>
+                <div class="job-meta">📍 Bangalore &nbsp; ₹4 - 6 LPA</div>
+                <p>Work on modern web applications using HTML, CSS, JavaScript and React.</p>
+                <div class="job-bottom">
+                    <span>◷ Posted 2 days ago</span>
+                    <button class="apply-btn" data-job="Frontend Developer">Apply Now →</button>
+                </div>
+            </article>
+
+            <article class="job-card" data-type="it" data-title="python developer" data-location="hyderabad">
+                <div class="job-top">
+                    <div class="job-icon yellow"><i class="fa-brands fa-python"></i></div>
+                    <div class="job-info">
+                        <h3>Python Developer</h3>
+                        <p>CodeWorks</p>
+                    </div>
+                    <span class="badge it-badge">IT</span>
+                </div>
+                <div class="job-meta">📍 Hyderabad &nbsp; ₹5 - 8 LPA</div>
+                <p>Develop and maintain Python-based applications and automation.</p>
+                <div class="job-bottom">
+                    <span>◷ Posted 3 days ago</span>
+                    <button class="apply-btn" data-job="Python Developer">Apply Now →</button>
+                </div>
+            </article>
+
+            <article class="job-card" data-type="it" data-title="software developer" data-location="chennai">
+                <div class="job-top">
+                    <div class="job-icon purple"><i class="fa-solid fa-laptop"></i></div>
+                    <div class="job-info">
+                        <h3>Software Developer</h3>
+                        <p>Innovate Technologies</p>
+                    </div>
+                    <span class="badge it-badge">IT</span>
+                </div>
+                <div class="job-meta">📍 Chennai &nbsp; ₹4 - 7 LPA</div>
+                <p>Build software solutions and collaborate with development teams.</p>
+                <div class="job-bottom">
+                    <span>◷ Posted 4 days ago</span>
+                    <button class="apply-btn" data-job="Software Developer">Apply Now →</button>
+                </div>
+            </article>
+
+            <article class="job-card" data-type="it" data-title="web developer" data-location="bangalore">
+                <div class="job-top">
+                    <div class="job-icon green"><i class="fa-solid fa-globe"></i></div>
+                    <div class="job-info">
+                        <h3>Web Developer</h3>
+                        <p>Digital Works</p>
+                    </div>
+                    <span class="badge it-badge">IT</span>
+                </div>
+                <div class="job-meta">📍 Bangalore &nbsp; ₹3 - 5 LPA</div>
+                <p>Design responsive websites using HTML, CSS and JavaScript.</p>
+                <div class="job-bottom">
+                    <span>◷ Posted 4 days ago</span>
+                    <button class="apply-btn" data-job="Web Developer">Apply Now →</button>
+                </div>
+            </article>
+
+            <article class="job-card" data-type="non-it" data-title="customer support executive" data-location="bangalore">
+                <div class="job-top">
+                    <div class="job-icon orange"><i class="fa-solid fa-headset"></i></div>
+                    <div class="job-info">
+                        <h3>Customer Support Executive</h3>
+                        <p>Business Services</p>
+                    </div>
+                    <span class="badge nonit-badge">Non-IT</span>
+                </div>
+                <div class="job-meta">📍 Bangalore &nbsp; ₹2.5 - 4 LPA</div>
+                <p>Handle customer queries through calls and chat.</p>
+                <div class="job-bottom">
+                    <span>◷ Posted 5 days ago</span>
+                    <button class="apply-btn" data-job="Customer Support Executive">Apply Now →</button>
+                </div>
+            </article>
+
+            <article class="job-card" data-type="non-it" data-title="process associate" data-location="hyderabad">
+                <div class="job-top">
+                    <div class="job-icon purple"><i class="fa-solid fa-people-group"></i></div>
+                    <div class="job-info">
+                        <h3>Process Associate</h3>
+                        <p>Global Services</p>
+                    </div>
+                    <span class="badge nonit-badge">Non-IT</span>
+                </div>
+                <div class="job-meta">📍 Hyderabad &nbsp; ₹2.5 - 4 LPA</div>
+                <p>Work on data processing, documentation and client support.</p>
+                <div class="job-bottom">
+                    <span>◷ Posted 6 days ago</span>
+                    <button class="apply-btn" data-job="Process Associate">Apply Now →</button>
+                </div>
+            </article>
+
+        </div>
+
+        <p id="noResults" hidden>No jobs found. Try another keyword or location.</p>
+    </section>
+
+    <section class="info-section">
+        <div class="about-box" id="about">
+            <i class="fa-solid fa-bullseye about-icon"></i>
+            <div>
+                <h2>About JobConnect</h2>
+                <p>
+                    JobConnect helps job seekers find suitable job opportunities based on their skills, location and interests.
+                </p>
+                <a href="#jobs" class="primary-btn">Learn More →</a>
+            </div>
+        </div>
+
+        <div class="contact-box" id="contact">
+            <i class="fa-solid fa-envelope about-icon"></i>
+            <div>
+                <h2>Contact Us</h2>
+                <p>Have any questions or need help?</p>
+                <p>Feel free to reach out to us.</p>
+                <a href="mailto:jobconnect@example.com">
+        jobconnect@example.com
+      </a>
+                <div class="social-links">
+                    <a href="https://linkedin.com" aria-label="LinkedIn">in</a>
+                    <a href="https://github.com" aria-label="GitHub">GH</a>
+                    <a href="https://x.com" aria-label="X">X</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div><i class="fa-solid fa-briefcase"></i> JobConnect</div>
+        <div class="footer-links">
+            <a href="#home">Home</a>
+            <a href="#jobs">Jobs</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </div>
+        <p>© 2026 JobConnect. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
